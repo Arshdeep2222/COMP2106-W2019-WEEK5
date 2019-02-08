@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .container
+    h1 Edit an Article
+    form(method="post")
+      .input-group.mb-5
+        input.form-control(name="title", placeholder="Title of Article", value=article.title)
+      .input-group.mb-5
+        input.form-control(name="author", placeholder="Author Name", value=article.author)
+      button.btn.btn-primary(type="submit") Submit Article

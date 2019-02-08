@@ -3,9 +3,13 @@ extends layout
 block content
   .container
     h1 Articles Page
+    a.btn.btn-primary(href="/articles/create") Create Article
     .row
       each article in articles
         .col-8
           .card
             h1= article.title
             h6= article.author
+            span
+              a.btn.btn-warning(href=`/articles/edit/${article.id}`) Edit
+              a.btn.btn-danger(href=`/articles/delete/${article.id}`) Delete
