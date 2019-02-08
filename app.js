@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
+
 mongoose.connect(
   'mongodb://demo-1:password1@ds127655.mlab.com:27655/comp2106-week5',
   { useNewUrlParser: true }
