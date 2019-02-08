@@ -24,7 +24,7 @@ router.post('/create', function(req, res, next) {
   const newArticle = new Article({ ...req.body, date: new Date() });
   newArticle.save(function(err) {
     if (err) res.json(err);
-
+    //console
     res.send('Created Correctly');
   });
 });
